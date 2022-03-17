@@ -1,0 +1,44 @@
+.main-nav {
+  grid-column: 1/1;
+  grid-row: 1/2;
+  padding: 35px 103px;
+  width: calc(100% - 206px);
+  max-width: calc(1366px - 206px);
+  display: flex;
+  justify-content: space-between;
+}
+
+// .logo {
+
+// }
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 33px;
+}
+
+.main-nav__list a {
+  text-decoration: none;
+  color: $color-default-white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 0;
+
+  &:hover {
+    color: skyblue;
+  }
+
+  &:active {
+    color: skyblue;
+  }
+}
+

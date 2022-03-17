@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,22 +10,19 @@
   </head>
   <body>
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--header">
           <a class="logo">
             <picture>
               <source media="(max-width: 768px)" srcset="./img/svg/logo-blue.svg">
               <img src="./img/svg/logo.svg" width="70" height="38" alt="logo">
             </picture>
           </a>
-          <ul>
-            <li>Преимущества</li>
-            <li>Направления</li>
-            <li>Ближайшие</li>
-            <li>Контакты</li>
+          <ul class="main-nav__list">
+            <li><a href="#advantages">Преимущества </a> </li>
+            <li><a href="#catalog">Направления</a> </li>
+            <li><a href="#catalog">Ближайшие круизы</a> </li>
+            <li><a href="#address">Контакты</a> </li>
           </ul>
-          <button class="burger-button">
-            <span></span>
-          </button>
         </nav>
         <div class="title">
           <h1 class="title__header">Круизы в Антарктику</h1>
@@ -50,12 +47,14 @@
           </div>
         </section>
         <section class="advantages">
-          <h2 class="advantages__title">Преимущества</h2>
-          <ul class="advantages__list">
+          <h2 class="advantages__title" id="advantages">Преимущества</h2>
+          <ul class="advantages__list" >
             <li>
-              <svg width="27" height="32">
-                <use xlink:href="img/sprite_auto.svg#liner"></use>
-              </svg>
+              <div class="advantages__svg-container">
+                <svg width="27" height="32">
+                  <use xlink:href="img/sprite_auto.svg#liner"></use>
+                </svg>
+              </div>
               <h3>Небольшой
                 круизный лайнер
               </h3>
@@ -66,34 +65,38 @@
               </p>
             </li>
             <li>
-              <svg width="38" height="21">
-                <use xlink:href="img/sprite_auto.svg#double-tick"></use>
-              </svg>
+              <div class="advantages__svg-container">
+                <svg width="38" height="21">
+                  <use xlink:href="img/sprite_auto.svg#double-tick"></use>
+                </svg>
+              </div>
               <h3>Система
                 все включено
               </h3>
               <p>
-                Все наши круизы работают по системе “Все Включено”. Великолепные блюда
+                Все наши круизы работают <br> по системе “Все Включено”. Великолепные блюда
                 и безлимитный бар доступны для вас
                 24 часа.
               </p>
             </li>
             <li>
-              <svg width="42" height="15">
-                <use xlink:href="img/sprite_auto.svg#boat"></use>
-              </svg>
+              <div class="advantages__svg-container">
+                <svg width="42" height="15">
+                  <use xlink:href="img/sprite_auto.svg#boat"></use>
+                </svg>
+              </div>
               <h3>Экскурсионные
                 туры на Zodiac
               </h3>
               <p>
                 Экскурсионные туры
-                к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac
-                в сопровождении опытных экскурсоводов.
+                к берегам Антарктиды совершаются <br> на оборудованных лодках типа <br> Zodiac
+                в сопровождении <br> опытных экскурсоводов.
               </p>
             </li>
           </ul>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
           <h2>Ближайшие круизы</h2>
           <ul class="catalog__list">
             <li tabindex="0">
@@ -321,7 +324,7 @@
         <div class="map">
           <img src="./img/map.png" width="560" height="306" alt="Карта">
         </div>
-        <div class="address">
+        <div class="address" id="address">
           <p>У вас ещё остались вопросы или сомнения?
             Приезжайте к нам в офис и мы вам все расскажем.
           </p>

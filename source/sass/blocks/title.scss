@@ -1,0 +1,32 @@
+.title {
+  grid-row: 2/3;
+  grid-column: 1/1;
+  color: $color-default-white;
+  padding: 0 103px;
+  width: calc(100% - 206px);
+  max-width: calc(1366px - 206px);
+  margin-top: 157px;
+}
+
+.title h1 {
+  margin: 0;
+  margin-left: 96px;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.title p {
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 96px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}

@@ -1,0 +1,26 @@
+.page-header {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 650px;
+
+  &::after {
+    content: "";
+    background-image: url(../../img/header-bg-desktop.png);
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../../img/header-bg-desktop@2x.png);
+    }
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: -1;
+  }
+}
