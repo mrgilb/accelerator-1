@@ -1,1 +1,192 @@
+.catalog {
+  width: calc(100% - 206px);
+  max-width: calc(1366px - 206px);
+  padding: 0 106px;
+  margin: 0 auto;
+  margin-top: 105px;
+}
 
+.catalog h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0em;
+}
+
+.catalog__list {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.catalog__list li {
+  display: grid;
+  width: 260px;
+  height: min-content;
+  align-items: flex-end;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .catalog__item-card {
+    background-color: $color-default-blue;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 28px 25px;
+    padding-bottom: 10px;
+  }
+
+  &:focus-within .catalog__item-card {
+    background-color: $color-default-blue;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 28px 25px;
+    padding-bottom: 10px;
+  }
+
+  &:hover h3 {
+    display: inline;
+  }
+
+  &:focus-within h3 {
+    display: inline;
+  }
+
+  &:hover dl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:focus-within dl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover dt {
+    display: inline;
+  }
+
+  &:focus-within dt {
+    display: inline;
+  }
+
+  &:hover dd {
+    display: inline;
+  }
+
+  &:focus-within dd {
+    display: inline;
+  }
+
+  &:hover a {
+    display: inline;
+  }
+
+  &:focus-within a {
+    display: inline;
+  }
+
+}
+
+.catalog__image-container {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.catalog__image-container img {
+  display: block;
+}
+
+.catalog__item-card {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  padding: 0 25px;
+  padding-bottom: 24px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
+}
+
+.catalog__item-card h3 {
+  font-size: 18px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+}
+
+.catalog__item-card dl {
+  margin: 0;
+  display: none;
+}
+
+.catalog__item-card dt {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  box-sizing: border-box;
+  display: none;
+}
+
+.catalog__item-card dd {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #D8D8D9;
+  margin: 0;
+  box-sizing: border-box;
+  display: none;
+}
+
+.catalog__item-card a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 47px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $color-default-blue;
+  background-color: $color-default-white;
+  display: none;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    background-color: skyblue;
+    outline: none;
+  }
+}

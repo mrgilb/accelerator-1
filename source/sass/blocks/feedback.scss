@@ -1,0 +1,157 @@
+.feedback {
+  display: grid;
+  box-sizing: border-box;
+  margin-top: 120px;
+  min-height: 555px;
+
+  &::after {
+    content: "";
+    background-image: url(../../img/feedback-bg-desktop.png);
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../../img/feedback-bg-desktop@2x.png);
+    }
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: -1;
+  }
+}
+
+.feedback__wrapper {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  max-width: calc(1366px - 206px);
+  width: calc(100% - 206px);
+  padding:0 103px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  justify-items: center;
+}
+
+.feedback__desc {
+  justify-self: end;
+}
+
+.feedback__desc h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+  margin: 0;
+  margin-top: -14px;
+  margin-bottom: 10px;
+}
+
+.feedback__desc p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.feedback__form {
+  padding: 43px 50px;
+  width: 403px;
+  min-height: 455px;
+  box-sizing: border-box;
+  background-color: $color-default-blue;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  justify-content: flex-start;
+  margin-right: 60px;
+}
+
+.feedback__form h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.feedback__form input {
+  box-sizing: border-box;
+  padding: 11px 16px;
+  width: 303px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.feedback__checkbox-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.feedback__label-checkbox {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  padding-left: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: $color-default-white;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+}
+
+.feedback__checkbox:checked + .feedback__label-checkbox {
+
+  &::after {
+    background-image: url(../../img/sprite/tick.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 16px;
+  }
+}
+
+.feedback__form button {
+  padding: 11px 16px;
+  font-size: 14px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: $color-default-white;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    background-color: skyblue;
+  }
+}

@@ -1,0 +1,13 @@
+.main-footer {
+  background-color: $color-default-blue;
+  padding: 13px 103px;
+  margin-top: 25px;
+}
+
+.main-footer__wrapper {
+  width: 100%;
+  max-width: (1366px - 206px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}

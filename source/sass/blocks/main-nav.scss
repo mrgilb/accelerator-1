@@ -1,6 +1,7 @@
 .main-nav {
   grid-column: 1/1;
   grid-row: 1/2;
+  margin: 0 auto;
   padding: 35px 103px;
   width: calc(100% - 206px);
   max-width: calc(1366px - 206px);
@@ -8,9 +9,12 @@
   justify-content: space-between;
 }
 
-// .logo {
-
-// }
+.main-nav--footer {
+  width: auto;
+  padding: 35px 0;
+  margin: 0;
+  gap: 40px;
+}
 
 .main-nav__list {
   padding: 0;
@@ -35,6 +39,11 @@
 
   &:hover {
     color: skyblue;
+  }
+
+  &:focus {
+    color: skyblue;
+    outline: none;
   }
 
   &:active {

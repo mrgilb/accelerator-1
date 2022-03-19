@@ -7,7 +7,7 @@
 
 // Blocks
 // ---------------------------------
-
+@import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
@@ -17,6 +17,10 @@
 @import "blocks/about.scss";
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
+@import "blocks/feedback.scss";
+@import "blocks/additional-info.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social-list.scss";
 
 // ---------------------------------
 
