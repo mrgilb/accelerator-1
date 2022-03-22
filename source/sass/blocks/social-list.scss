@@ -9,6 +9,10 @@
   @media(max-width: $vp-1366) {
     gap: 23px;
   }
+
+  @media(max-width: $vp-768) {
+    align-self: flex-start;
+  }
 }
 
 .social-list__fb {

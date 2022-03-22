@@ -17,6 +17,7 @@
   @media(max-width: $vp-768) {
     width: calc(100% - 30px);
     padding: 0 15px;
+    margin-top: 110px;
   }
 }
 
@@ -47,6 +48,14 @@
     line-height: 45px;
     letter-spacing: 0em;
     text-align: left;
+  }
+}
+
+.title__desc br {
+  display: none;
+
+  @media(max-width: $vp-768) {
+    display: inline;
   }
 }
 

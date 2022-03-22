@@ -15,6 +15,15 @@
     gap: 27px;
     margin-top: 100px;
   }
+
+  @media(max-width: $vp-768) {
+    padding: 0 15px;
+    width: calc(100% - 30px);
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 32px;
+    margin-top: 0;
+  }
 }
 
 .additional-info__map {
@@ -23,6 +32,10 @@
     width: 48%;
     min-height: 335px;
     height: 100%;
+  }
+
+  @media(max-width: $vp-768) {
+    width: 100%;
   }
 }
 
@@ -52,6 +65,11 @@
     padding: 0;
     margin-top: 66px;
     gap: 26px;
+  }
+
+  @media(max-width: $vp-768) {
+    width: 100%;
+    margin-top: 58px;
   }
 }
 

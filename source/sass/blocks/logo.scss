@@ -2,6 +2,10 @@
   @media(max-width: $vp-1366) {
     margin-top: 7px;
   }
+
+  @media(max-width: $vp-768) {
+    margin: 0;
+  }
 }
 
 .logo svg {

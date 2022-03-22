@@ -32,17 +32,37 @@
     justify-content: flex-start;
   }
 
+  @media(max-width: $vp-768) {
+    padding: 0;
+    gap: 14px;
+  }
+
 }
 
 .main-nav--footer .main-nav__list {
   @media(max-width: $vp-768) {
     position: static;
     background-color: $color-default-blue;
+    display: flex;
+    gap: 0;
   }
 }
 
 .main-nav--footer .main-nav__link--footer {
   color: $color-default-white;
+
+  @media(max-width: $vp-768) {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  @media(max-width: $vp-768) {
+    padding: 9px 0;
+  }
 }
 
 .main-nav__list {
@@ -64,7 +84,12 @@
     right: 0;
     top: 0;
     background-color: $color-default-white;
+    display: none;
   }
+}
+
+.main-nav__list--show {
+  display: flex;
 }
 
 
