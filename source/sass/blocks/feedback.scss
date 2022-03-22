@@ -4,12 +4,27 @@
   margin-top: 120px;
   min-height: 555px;
 
+  @media(max-width: $vp-1366) {
+    margin-top: 99px;
+    min-height: 805px;
+  }
+
   &::after {
     content: "";
-    background-image: url(../../img/feedback-bg-desktop.png);
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url(../../img/feedback-bg-desktop@2x.png);
+    @media(min-width: 768px) and (max-width: $vp-1366) {
+      background-image: url(../../img/feedback-bg-tablet.png);
+      @media (min-resolution: $retina-dppx) {
+        background-image: url(../../img/feedback-bg-tablet@2x.png);
+      }
+    }
+
+    @media (min-width: 1366px) {
+      background-image: url(../../img/feedback-bg-desktop.png);
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url(../../img/feedback-bg-desktop@2x.png);
+      }
     }
 
     background-repeat: no-repeat;
@@ -35,10 +50,23 @@
   gap: 55px;
   align-items: center;
   justify-items: center;
+
+  @media(max-width: $vp-1366) {
+    width: calc(100% - 90px);
+    padding:0 45px;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 50px;
+  }
 }
 
 .feedback__desc {
   justify-self: end;
+
+  @media(max-width: $vp-1366) {
+    grid-row: 1/2;
+    justify-self: center;
+  }
 }
 
 .feedback__desc h2 {
@@ -52,6 +80,17 @@
   margin: 0;
   margin-top: -14px;
   margin-bottom: 10px;
+
+  @media(max-width: $vp-1366) {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 90px;
+    margin-bottom: 5px;
+  }
 }
 
 .feedback__desc p {
@@ -62,6 +101,15 @@
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
+
+  @media(max-width: $vp-1366) {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 }
 
 .feedback__form {
@@ -75,6 +123,13 @@
   justify-self: end;
   justify-content: flex-start;
   margin-right: 60px;
+
+  @media(max-width: $vp-1366) {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: flex-start;
+    margin: 0;
+  }
 }
 
 .feedback__form h3 {
