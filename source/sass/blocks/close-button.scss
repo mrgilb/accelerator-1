@@ -1,8 +1,8 @@
-.close-button {
-  background-color: transparent !important; //Использовал !important поскольку по ТЗ в формах нельзя использовать стилизацию по классам.
+.feedback__form .close-button {
+  background-color: transparent;
   box-shadow: none;
   border: none;
-  padding: 0 !important; //Использовал !important поскольку по ТЗ в формах нельзя использовать стилизацию по классам.
+  padding: 0;
   margin: 0;
   position: absolute;
   z-index: 10;
@@ -13,6 +13,11 @@
   height: 12px;
   top: 0;
   right: 0;
+  cursor: pointer;
+}
+
+.feedback__form .close-button:hover {
+  background-color: transparent;
 }
 
 .close-button__cross {
@@ -46,8 +51,8 @@
     top: 0;
     transform: rotate(-45deg);
   }
-};
+}
 
-.close-button--hidden {
+.feedback__form .close-button--hidden {
   display: none;
 }

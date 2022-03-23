@@ -7,4 +7,3 @@ export const checkNodeOfParrentByIdAndRemove = (node, parrent) => {
     });
   }
 };
-

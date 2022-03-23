@@ -8,13 +8,13 @@
   align-items: center;
   grid-template-columns: 1fr 1fr;
 
-  @media(max-width: $vp-1366) {
-   margin-top: 91px;
-   width: calc(100% - 90px);
-   gap: 32px;
+  @media (max-width: $vp-1366) {
+    margin-top: 91px;
+    width: calc(100% - 90px);
+    gap: 32px;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     width: calc(100% - 30px);
     grid-template-columns: 1fr;
     margin-top: 55px;
@@ -25,7 +25,7 @@
 .about__desc-container {
   grid-column: 1/2;
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     grid-row: 1/2;
   }
 }
@@ -36,25 +36,22 @@
   font-style: normal;
   font-weight: 600;
   line-height: 42px;
-  letter-spacing: 0em;
   text-align: left;
   margin: 0;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: left;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 34px;
-    letter-spacing: 0em;
     text-align: left;
   }
 }
@@ -62,7 +59,7 @@
 .about__title br {
   display: none;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     display: inline;
   }
 }
@@ -73,23 +70,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   margin: 0;
   margin-top: 25px;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     margin-top: 15px;
   }
 }
 
-.about__image-container  {
+.about__image-container {
   width: 560px;
   height: 301px;
   overflow: hidden;

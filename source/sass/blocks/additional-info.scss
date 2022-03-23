@@ -9,14 +9,14 @@
   justify-content: space-between;
   align-items: center;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     padding: 0 45px;
     width: calc(100% - 90px);
     gap: 27px;
     margin-top: 100px;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     padding: 0 15px;
     width: calc(100% - 30px);
     flex-direction: column-reverse;
@@ -27,14 +27,13 @@
 }
 
 .additional-info__map {
-
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     width: 48%;
     min-height: 335px;
     height: 100%;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     width: 100%;
   }
 }
@@ -43,7 +42,7 @@
   border: none;
   display: block;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     width: 100%;
     min-height: 335px;
     height: 100%;
@@ -59,7 +58,7 @@
   padding: 77px 0;
   gap: 31px;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     width: 48%;
     align-self: flex-start;
     padding: 0;
@@ -67,19 +66,17 @@
     gap: 26px;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     width: 100%;
     margin-top: 58px;
   }
 }
-
 
 .additional-info__address p {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: left;
   margin: 0;
 }
@@ -89,7 +86,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   text-decoration: none;
   color: $color-default-blue;
@@ -100,14 +96,13 @@
 .additional-info__link br {
   display: none;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     display: inline;
   }
 }
 
 .additional-info__mark {
-
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     width: 28px;
     height: 23px;
   }

@@ -57,4 +57,3 @@ if (document.querySelector('.feedback__form')) {
 
   }
 }
-

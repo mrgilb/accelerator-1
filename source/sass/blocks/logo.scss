@@ -1,9 +1,9 @@
 .logo {
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     margin-top: 7px;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     margin: 0;
   }
 }
@@ -11,22 +11,20 @@
 .logo__img {
   fill: $color-default-white;
 
-  @media(max-width: $vp-1366) {
+  @media (max-width: $vp-1366) {
     width: 38px;
     height: 20px;
   }
 
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     width: 42px;
     height: 22px;
   }
 }
 
 .logo__img--active {
-
-  @media(max-width: $vp-768) {
+  @media (max-width: $vp-768) {
     fill: $color-default-blue;
     margin-left: 15px;
   }
 }
-
