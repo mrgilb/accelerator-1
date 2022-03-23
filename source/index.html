@@ -10,22 +10,22 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body-page">
   <header class="page-header">
-    <nav class="main-nav main-nav--header">
+    <nav class="main-nav main-nav--header main-nav--nojs" id="burger-menu">
       <a class="logo">
-        <svg width="70" height="38">
+        <svg width="70" height="38" class="logo__img logo__img--active">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
       </a>
       <ul class="main-nav__list">
-        <li><a href="#advantages">Преимущества </a> </li>
-        <li><a href="#catalog">Направления</a> </li>
-        <li><a href="#catalog">Ближайшие круизы</a> </li>
-        <li><a href="#address">Контакты</a> </li>
+        <li><a class="main-nav__link" href="#advantages">Преимущества </a> </li>
+        <li><a class="main-nav__link" href="#catalog">Направления</a> </li>
+        <li><a class="main-nav__link" href="#catalog">Ближайшие круизы</a> </li>
+        <li><a class="main-nav__link" href="#address">Контакты</a> </li>
       </ul>
-      <button class="burger-button ">
-        <span class="burger-button__cross"></span>
+      <button class="burger-button burger-button--active burger-button--nojs">
+        <span class="burger-button__cross burger-button__cross--active"></span>
       </button>
     </nav>
     <div class="title">
@@ -134,7 +134,7 @@
               <dt>Цена</dt>
               <dd>от 11500 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -166,7 +166,7 @@
               <dt>Цена</dt>
               <dd>от 14500 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -198,7 +198,7 @@
               <dt>Цена</dt>
               <dd>от 14500 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -230,7 +230,7 @@
               <dt>Цена</dt>
               <dd>9700 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -262,7 +262,7 @@
               <dt>Цена</dt>
               <dd>от 18600 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -293,7 +293,7 @@
               <dt>Цена</dt>
               <dd>от 11700 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -324,7 +324,7 @@
               <dt>Цена</dt>
               <dd>от 12500 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
         <li tabindex="0">
@@ -356,7 +356,7 @@
               <dt>Цена</dt>
               <dd>от 12300 $</dd>
             </dl>
-            <a href="#feedback__form">Забронировать</a>
+            <a class="catalog__link" href="#feedback__form">Забронировать</a>
           </div>
         </li>
       </ul>
@@ -390,6 +390,7 @@
             </label>
           </div>
           <button type="submit">Оставить заявку</button>
+          <button class="close-button close-button--hidden"><span class="close-button__cross"></span></button>
         </form>
       </div>
     </section>
@@ -421,7 +422,7 @@
       <nav class="main-nav main-nav--footer">
         <a class="logo">
           <svg width="70" height="38">
-            <use xlink:href="img/sprite_auto.svg#logo"></use>
+            <use xlink:href="img/sprite_auto.svg#logo" class="logo__img"></use>
           </svg>
         </a>
         <ul class="main-nav__list main-nav__list--footer">
@@ -459,6 +460,7 @@
       </ul>
     </div>
   </footer>
+  <script src="./js/main.min.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,53 @@
+.close-button {
+  background-color: transparent !important; //Использовал !important поскольку по ТЗ в формах нельзя использовать стилизацию по классам.
+  box-shadow: none;
+  border: none;
+  padding: 0 !important; //Использовал !important поскольку по ТЗ в формах нельзя использовать стилизацию по классам.
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+  margin-top: 7px;
+  margin-right: 15px;
+  display: block;
+  width: 18px;
+  height: 12px;
+  top: 0;
+  right: 0;
+}
+
+.close-button__cross {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: transparent;
+  margin: 0 auto;
+  position: relative;
+  margin-right: 15px;
+  margin-top: 15px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: $color-default-white;
+    left: 0;
+    bottom: -1px;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: $color-default-white;
+    left: 0;
+    top: 0;
+    transform: rotate(-45deg);
+  }
+};
+
+.close-button--hidden {
+  display: none;
+}

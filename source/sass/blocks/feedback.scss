@@ -177,6 +177,7 @@
   justify-self: end;
   justify-content: flex-start;
   margin-right: 60px;
+  position: relative;
 
   @media(max-width: $vp-1366) {
     grid-row: 2/3;
@@ -189,6 +190,10 @@
     width: 290px;
     padding: 35px 30px;
   }
+}
+
+.feedback__form--shadow {
+  box-shadow: 0px -3px 25px 4px rgba(34, 60, 80, 0.22);
 }
 
 .feedback__form h3 {
@@ -306,3 +311,4 @@
     background-color: skyblue;
   }
 }
+
