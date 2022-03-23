@@ -8,12 +8,21 @@
   <meta name="description" content="Описание проекта">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
 </head>
 
 <body class="body-page">
   <header class="page-header">
     <nav class="main-nav main-nav--header main-nav--nojs" id="burger-menu">
       <a class="logo">
+        <span class="visually-hidden">Logo</span>
         <svg width="70" height="38" class="logo__img logo__img--active">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
@@ -29,14 +38,14 @@
       </button>
     </nav>
     <div class="title">
-      <h1 class="title__header">Круизы в&nbsp;Антарктику</h1>
-      <p class="title__desc">Волшебный мир <br> айсбергов и&nbsp;пингвинов</p>
+      <h1>Круизы в&nbsp;Антарктику</h1>
+      <p>Волшебный мир <br> айсбергов и&nbsp;пингвинов</p>
     </div>
   </header>
   <main>
     <section class="about">
       <div class="about__desc-container">
-        <h2 class="about__title">Путешествие <br> на&nbsp;край Земли</h2>
+        <h2>Путешествие <br> на&nbsp;край Земли</h2>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
           круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов
           пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
@@ -52,7 +61,7 @@
       </div>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title" id="advantages">Преимущества</h2>
+      <h2 id="advantages">Преимущества</h2>
       <ul class="advantages__list">
         <li>
           <div class="advantages__svg-container">
@@ -422,6 +431,7 @@
     <div class="main-footer__wrapper">
       <nav class="main-nav main-nav--footer">
         <a class="logo">
+          <span class="visually-hidden">Logo</span>
           <svg width="70" height="38" class="logo__img">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>

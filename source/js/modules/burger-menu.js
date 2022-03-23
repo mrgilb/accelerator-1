@@ -1,19 +1,24 @@
 if (document.querySelector('.main-nav--header')) {
   const mainNav = document.querySelector('.main-nav--header');
   mainNav.classList.remove('main-nav--nojs');
+  mainNav.classList.add('main-nav--hidden');
 
   if (mainNav.querySelector('.logo__img')) {
     const logoImage = mainNav.querySelector('.logo__img');
+    logoImage.classList.remove('logo__img--active');
 
     if (mainNav.querySelector('.main-nav__list')) {
       const navList = mainNav.querySelector('.main-nav__list');
+      navList.classList.add('main-nav__list--hidden');
 
       if (mainNav.querySelector('.burger-button')) {
         const burger = mainNav.querySelector('.burger-button');
         burger.classList.remove('burger-button--nojs');
+        burger.classList.remove('burger-button--active');
 
         if (mainNav.querySelector('.burger-button__cross')) {
           const burgerIcon = mainNav.querySelector('.burger-button__cross');
+          burgerIcon.classList.remove('burger-button__cross--active');
 
           const onClickBurger = (event) => {
             event.preventDefault();
