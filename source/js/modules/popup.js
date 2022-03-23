@@ -1,5 +1,6 @@
 import {isEscapeKey} from '../utils/isEscape.js';
 import {checkNodeOfParrentByIdAndRemove} from '../utils/checkNodeOfParrentAndRemove.js';
+import {validationPhone} from './form-validation.js';
 
 if (document.querySelector('.feedback__form')) {
   const form = document.querySelector('.feedback__form').cloneNode(true);
@@ -33,6 +34,10 @@ if (document.querySelector('.feedback__form')) {
             body.style.overflow = 'hidden';
             buttonClose.classList.remove('close-button--hidden');
             body.appendChild(form);
+            if (form.querySelector('#telephone')) {
+              const phoneInput = form.querySelector('#telephone');
+              phoneInput.addEventListener('input', validationPhone);
+            }
           }
         };
 

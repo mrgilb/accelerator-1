@@ -30,5 +30,3 @@ if (document.querySelector('.main-nav--header')) {
     }
   }
 }
-
-
