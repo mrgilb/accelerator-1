@@ -221,7 +221,7 @@
   }
 }
 
-.feedback__checkbox-container {
+.feedback__form div {
   display: flex;
   gap: 5px;
   margin-bottom: 30px;
@@ -231,7 +231,8 @@
   }
 }
 
-.feedback__label-checkbox {
+
+.feedback__form div label {
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -254,7 +255,7 @@
   }
 }
 
-.feedback__label-checkbox br {
+.feedback__form div label  br {
   display: none;
 
   @media(max-width: $vp-768) {
@@ -262,7 +263,21 @@
   }
 }
 
-.feedback__checkbox:checked + .feedback__label-checkbox {
+.feedback__form input[type = "checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.feedback__form input[type = "checkbox"]:checked + label {
 
   &::after {
     background-image: url(../../img/sprite/tick.svg);

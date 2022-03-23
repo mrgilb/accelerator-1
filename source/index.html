@@ -371,20 +371,20 @@
             до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
           </p>
         </div>
-        <form class="feedback__form" id="feedback__form">
+        <form class="feedback__form"  action="https://echo.htmlacademy.ru/" id="feedback__form">
           <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
           <label>
-            <input type="text" placeholder="Имя" required>
+            <input type="text" placeholder="Имя" name="name" required>
           </label>
           <label>
-            <input type="tel" placeholder="Телефон" required>
+            <input type="tel" placeholder="Телефон" name="tel" required>
           </label>
           <label>
-            <input type="email" placeholder="Email" required>
+            <input type="email" placeholder="Email" name="email" required>
           </label>
-          <div class="feedback__checkbox-container">
-            <input class="feedback__checkbox visually-hidden" id="checkbox" type="checkbox">
-            <label class="feedback__label-checkbox" for="checkbox">
+          <div>
+            <input  id="checkbox" name="consent-to-data-processing" type="checkbox">
+            <label  for="checkbox">
               Я&nbsp;согласен на&nbsp;обработку <br> моих персональных
               данных
             </label>
