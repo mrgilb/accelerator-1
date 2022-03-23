@@ -2,8 +2,10 @@ import {isEscapeKey} from '../utils/isEscape.js';
 import {checkNodeOfParrentByIdAndRemove} from '../utils/checkNodeOfParrentAndRemove.js';
 import {validationPhone} from './form-validation.js';
 
-if (document.querySelector('.feedback__form')) {
-  const form = document.querySelector('.feedback__form').cloneNode(true);
+if (document.querySelector('#feedback__form')) {
+  const form = document.querySelector('#feedback__form').cloneNode(true);
+
+
   form.style.position = 'fixed';
   form.style.top = 'calc(50% - 230px)';
   form.style.right = '0';
@@ -30,10 +32,11 @@ if (document.querySelector('.feedback__form')) {
         const onClickLinkListProduct = (evt) => {
           if (evt.target.matches('.catalog__link')) {
             evt.preventDefault();
-            form.classList.add('feedback__form--shadow');
+            form.classList.add('feedback__form--shadow', 'feedback__form--js');
             body.style.overflow = 'hidden';
             buttonClose.classList.remove('close-button--hidden');
             body.appendChild(form);
+            form.classList.add();
             if (form.querySelector('#telephone')) {
               const phoneInput = form.querySelector('#telephone');
               phoneInput.addEventListener('input', validationPhone);

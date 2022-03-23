@@ -1,4 +1,4 @@
-.feedback__form .close-button {
+.feedback__form--js .close-button {
   background-color: transparent;
   box-shadow: none;
   border: none;
@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.feedback__form .close-button:hover {
+.feedback__form--js .close-button:hover {
   background-color: transparent;
 }
 

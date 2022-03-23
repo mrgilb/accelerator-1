@@ -8,6 +8,7 @@
   <meta name="description" content="Описание проекта">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link type="image/x-icon" rel="shortcut icon" href="./favicon/favicon.ico">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
@@ -381,32 +382,34 @@
             до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
           </p>
         </div>
-        <form class="feedback__form" action="https://echo.htmlacademy.ru/" id="feedback__form">
-          <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-          <label>
-            <input type="text" placeholder="Имя" name="name" required>
-          </label>
-          <label>
-            <input type="tel" placeholder="Телефон" name="tel" id="telephone" required>
-          </label>
-          <label>
-            <input type="email" placeholder="Email" name="email" required>
-          </label>
-          <div>
-            <input id="checkbox" name="consent-to-data-processing" type="checkbox">
-            <label for="checkbox">
-              Я&nbsp;согласен на&nbsp;обработку <br> моих персональных
-              данных
+        <div class="feedback__form">
+          <form action="https://echo.htmlacademy.ru/" id="feedback__form">
+            <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+            <label>
+              <input type="text" placeholder="Имя" name="name" required>
             </label>
-          </div>
-          <button type="submit" id="submit-form">Оставить заявку</button>
-          <button class="close-button close-button--hidden"><span class="close-button__cross"></span></button>
-        </form>
+            <label>
+              <input type="tel" placeholder="Телефон" name="tel" id="telephone" required>
+            </label>
+            <label>
+              <input type="email" placeholder="Email" name="email" required>
+            </label>
+            <div>
+              <input id="checkbox" name="consent-to-data-processing" type="checkbox">
+              <label for="checkbox">
+                Я&nbsp;согласен на&nbsp;обработку <br> моих персональных
+                данных
+              </label>
+            </div>
+            <button type="submit" id="submit-form">Оставить заявку</button>
+            <button class="close-button close-button--hidden"><span class="close-button__cross"></span></button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="additional-info">
       <div class="additional-info__map" style="position:relative;overflow:hidden;"><iframe
-          src="https://yandex.ru/map-widget/v1/-/CCUEuTsGlB" width="560" height="400" frameborder="1"
+          src="https://yandex.ru/map-widget/v1/-/CCUEuTsGlB" width="560" height="400"
           style="position:relative;"></iframe></div>
       <div class="additional-info__address" id="address">
         <p>У&nbsp;вас ещё остались вопросы или сомнения?
