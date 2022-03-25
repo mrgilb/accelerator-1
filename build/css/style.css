@@ -654,7 +654,7 @@ html {
   text-align: left;
 }
 
-.title__desc br {
+.title__br-for-mobile {
   display: none;
 }
 
@@ -1159,6 +1159,9 @@ html {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  -ms-grid-column-align: end;
+  justify-self: end;
+  margin-right: 60px;
 }
 
 .feedback__form form {
@@ -1179,7 +1182,6 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  margin-right: 60px;
   position: relative;
 }
 
@@ -1347,14 +1349,14 @@ html {
 }
 
 .feedback__form input[type="checkbox"]:checked + label::after {
-  background-image: url("../../img/sprite/tick.svg");
+  background-image: url("../img/sprite/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 10px 16px;
 }
 
 .feedback__form--js input[type="checkbox"]:checked + label::after {
-  background-image: url("../../img/sprite/tick.svg");
+  background-image: url("../img/sprite/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 10px 16px;
@@ -1578,29 +1580,29 @@ html {
 
 @media (min-width: 1366px) {
   .page-header::after {
-    background-image: url("../../img/header-bg-desktop.png");
+    background-image: url("../img/header-bg-desktop.png");
   }
 
   .advantages::after {
-    background-image: url("../../img/main-bg-desktop.png");
+    background-image: url("../img/main-bg-desktop.png");
   }
 
   .feedback::after {
-    background-image: url("../../img/feedback-bg-desktop.png");
+    background-image: url("../img/feedback-bg-desktop.png");
   }
 }
 
 @media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
   .page-header::after {
-    background-image: url("../../img/header-bg-desktop@2x.png");
+    background-image: url("../img/header-bg-desktop@2x.png");
   }
 
   .advantages::after {
-    background-image: url("../../img/main-bg-desktop@2x.png");
+    background-image: url("../img/main-bg-desktop@2x.png");
   }
 
   .feedback::after {
-    background-image: url("../../img/feedback-bg-desktop@2x.png");
+    background-image: url("../img/feedback-bg-desktop@2x.png");
   }
 }
 
@@ -1850,7 +1852,7 @@ html {
     text-align: center;
   }
 
-  .feedback__form form {
+  .feedback__form {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -2093,7 +2095,7 @@ html {
     text-align: left;
   }
 
-  .title__desc br {
+  .title__br-for-mobile {
     display: inline;
   }
 
@@ -2345,56 +2347,56 @@ html {
 
 @media (min-width: 0) and (max-width: 767px) {
   .page-header::after {
-    background-image: url("../../img/header-bg-mobile.png");
+    background-image: url("../img/header-bg-mobile.png");
   }
 
   .advantages::after {
-    background-image: url("../../img/main-bg-mobile.png");
+    background-image: url("../img/main-bg-mobile.png");
   }
 
   .feedback::after {
-    background-image: url("../../img/feedback-bg-mobile.png");
+    background-image: url("../img/feedback-bg-mobile.png");
   }
 }
 
 @media (min-width: 0) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 0) and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 0) and (max-width: 767px) and (min-resolution: 2dppx) {
   .page-header::after {
-    background-image: url("../../img/header-bg-mobile@2x.png");
+    background-image: url("../img/header-bg-mobile@2x.png");
   }
 
   .advantages::after {
-    background-image: url("../../img/main-bg-mobile@2x.png");
+    background-image: url("../img/main-bg-mobile@2x.png");
   }
 
   .feedback::after {
-    background-image: url("../../img/feedback-bg-mobile@2x.png");
+    background-image: url("../img/feedback-bg-mobile@2x.png");
   }
 }
 
 @media (min-width: 768px) and (max-width: 1365px) {
   .page-header::after {
-    background-image: url("../../img/header-bg-tablet.png");
+    background-image: url("../img/header-bg-tablet.png");
   }
 
   .advantages::after {
-    background-image: url("../../img/main-bg-tablet.png");
+    background-image: url("../img/main-bg-tablet.png");
   }
 
   .feedback::after {
-    background-image: url("../../img/feedback-bg-tablet.png");
+    background-image: url("../img/feedback-bg-tablet.png");
   }
 }
 
 @media (min-width: 768px) and (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1365px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (max-width: 1365px) and (min-resolution: 2dppx) {
   .page-header::after {
-    background-image: url("../../img/header-bg-tablet@2x.png");
+    background-image: url("../img/header-bg-tablet@2x.png");
   }
 
   .advantages::after {
-    background-image: url("../../img/main-bg-tablet@2x.png");
+    background-image: url("../img/main-bg-tablet@2x.png");
   }
 
   .feedback::after {
-    background-image: url("../../img/feedback-bg-tablet@2x.png");
+    background-image: url("../img/feedback-bg-tablet@2x.png");
   }
 }

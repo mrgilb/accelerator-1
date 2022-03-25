@@ -1,0 +1,448 @@
+.feedback {
+  display: grid;
+  box-sizing: border-box;
+  margin-top: 120px;
+  min-height: 555px;
+
+  @media (max-width: $vp-1366) {
+    margin-top: 99px;
+    min-height: 805px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-top: 65px;
+    min-height: 760px;
+  }
+
+  &::after {
+    content: "";
+
+    @media (min-width: 0) and (max-width: $vp-768) {
+      background-image: url("../img/feedback-bg-mobile.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/feedback-bg-mobile@2x.png");
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: $vp-1366) {
+      background-image: url("../img/feedback-bg-tablet.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/feedback-bg-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: 1366px) {
+      background-image: url("../img/feedback-bg-desktop.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/feedback-bg-desktop@2x.png");
+      }
+    }
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: -1;
+  }
+}
+
+.feedback__wrapper {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  max-width: calc(1366px - 206px);
+  width: calc(100% - 206px);
+  padding: 0 103px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  justify-items: center;
+
+  @media (max-width: $vp-1366) {
+    width: calc(100% - 90px);
+    padding: 0 45px;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 50px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    gap: 34px;
+  }
+}
+
+.feedback__desc {
+  justify-self: end;
+
+  @media (max-width: $vp-1366) {
+    grid-row: 1/2;
+    justify-self: center;
+  }
+}
+
+.feedback__desc h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  display: block;
+  margin: 0;
+  margin-top: -14px;
+  margin-bottom: 10px;
+
+  @media (max-width: $vp-1366) {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51px;
+    text-align: left;
+    margin-top: 90px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $vp-768) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: center;
+    margin: 0;
+    margin-top: 59px;
+  }
+}
+
+.feedback__desc-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  margin: 0;
+
+  @media (max-width: $vp-1366) {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  @media (max-width: $vp-768) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 14px;
+  }
+}
+
+.feedback__desc-text .feedback__br-for-tablet-desktop {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.feedback__desc-text .feedback__br-for-mobile {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: inline;
+  }
+}
+
+.feedback__form {
+  width: min-content;
+  justify-self: end;
+  margin-right: 60px;
+
+  @media (max-width: $vp-1366) {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: flex-start;
+    margin: 0;
+  }
+}
+
+.feedback__form form {
+  padding: 43px 50px;
+  width: 403px;
+  min-height: 455px;
+  box-sizing: border-box;
+  background-color: $color-default-blue;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  justify-content: flex-start;
+  position: relative;
+
+
+
+  @media (max-width: $vp-768) {
+    width: 290px;
+    padding: 35px 30px;
+  }
+}
+
+.feedback__form--js {
+  padding: 43px 50px;
+  width: 403px;
+  min-height: 455px;
+  box-sizing: border-box;
+  background-color: $color-default-blue;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  justify-content: flex-start;
+  margin-right: 60px;
+  position: relative;
+
+  @media (max-width: $vp-1366) {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 290px;
+    padding: 35px 30px;
+  }
+}
+
+
+.feedback__form--shadow form {
+  box-shadow: 0 -3px 25px 4px rgba(34, 60, 80, 0.22);
+}
+
+.feedback__form h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (max-width: $vp-768) {
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.feedback__form--js h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (max-width: $vp-768) {
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.feedback__form input {
+  box-sizing: border-box;
+  padding: 11px 16px;
+  width: 303px;
+  margin-bottom: 20px;
+  outline: none;
+
+  @media (max-width: $vp-768) {
+    width: 230px;
+    margin-bottom: 19px;
+  }
+}
+
+.feedback__form--js input {
+  box-sizing: border-box;
+  padding: 11px 16px;
+  width: 303px;
+  margin-bottom: 20px;
+  outline: none;
+
+  @media (max-width: $vp-768) {
+    width: 230px;
+    margin-bottom: 19px;
+  }
+}
+
+.feedback__form div {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 27px;
+  }
+}
+
+.feedback__form--js div {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 27px;
+  }
+}
+
+.feedback__form div label {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  padding-left: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: $color-default-white;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+}
+
+.feedback__form--js div label {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+
+  text-align: left;
+  color: $color-default-white;
+  margin: 0;
+  padding-left: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: $color-default-white;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+}
+
+.feedback__form div label br {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: inline;
+  }
+}
+
+.feedback__form--js div label br {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: inline;
+  }
+}
+
+.feedback__form input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feedback__form--js input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feedback__form input[type="checkbox"]:checked + label {
+  &::after {
+    background-image: url("../img/sprite/tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 16px;
+  }
+}
+
+.feedback__form--js input[type="checkbox"]:checked + label {
+  &::after {
+    background-image: url("../img/sprite/tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 16px;
+  }
+}
+
+.feedback__form button {
+  padding: 11px 16px;
+  font-size: 14px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  background-color: $color-default-white;
+
+  &:hover {
+    background-color: #87ceeb;
+  }
+
+  &:focus {
+    background-color: #87ceeb;
+  }
+}
+
+.feedback__form--js button {
+  padding: 11px 16px;
+  font-size: 14px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  background-color: $color-default-white;
+
+  &:hover {
+    background-color: #87ceeb;
+  }
+
+  &:focus {
+    background-color: #87ceeb;
+  }
+}
