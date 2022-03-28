@@ -12,6 +12,6 @@ export const validationPhone = (evt) => {
 if (document.getElementById('telephone')) {
   const phoneInput = document.getElementById('telephone');
 
-  phoneInput.addEventListener('input', validationPhone);
+  phoneInput.addEventListener('input', validationPhone, {passive: true});
 
 }

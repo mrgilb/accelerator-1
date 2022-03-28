@@ -39,7 +39,7 @@ if (document.querySelector('#feedback__form')) {
             form.classList.add();
             if (form.querySelector('#telephone')) {
               const phoneInput = form.querySelector('#telephone');
-              phoneInput.addEventListener('input', validationPhone);
+              phoneInput.addEventListener('input', validationPhone, {passive: true});
             }
           }
         };
@@ -53,7 +53,7 @@ if (document.querySelector('#feedback__form')) {
         };
 
         listProduct.addEventListener('click', onClickLinkListProduct);
-        document.addEventListener('keydown', onClickKeydown);
+        document.addEventListener('keydown', onClickKeydown, {passive: true});
         buttonClose.addEventListener('click', onClickCloseForm);
       }
     }

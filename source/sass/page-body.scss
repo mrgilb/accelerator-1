@@ -9,3 +9,11 @@ html {
   margin: 0 auto;
   color: $color-default-blue;
 }
+
+.body-page {
+  position: relative;
+}
+
+.body-page--hidden-overflow {
+  overflow: hidden;
+}

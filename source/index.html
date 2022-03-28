@@ -20,6 +20,7 @@
 </head>
 
 <body class="body-page">
+  <div class="shading"></div>
   <header class="page-header">
     <nav class="main-nav main-nav--header main-nav--nojs" id="burger-menu">
       <a class="logo">
@@ -36,6 +37,7 @@
       </ul>
       <button class="burger-button burger-button--active burger-button--nojs">
         <span class="burger-button__cross burger-button__cross--active"></span>
+        <span class="visually-hidden">Навигация</span>
       </button>
     </nav>
     <div class="title">
@@ -408,9 +410,12 @@
       </div>
     </section>
     <section class="additional-info">
-      <div class="additional-info__map" style="position:relative;overflow:hidden;"><iframe
+      <div class="additional-info__map" style="position:relative;overflow:hidden;">
+        <iframe
           src="https://yandex.ru/map-widget/v1/-/CCUEuTsGlB" width="560" height="400"
-          style="position:relative;"></iframe></div>
+          style="position:relative;">
+        </iframe>
+      </div>
       <div class="additional-info__address" id="address">
         <p>У&nbsp;вас ещё остались вопросы или сомнения?
           Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.

@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-display: swap;
 }
@@ -440,6 +440,27 @@ html {
   font-weight: 400;
   margin: 0 auto;
   color: #011c40;
+}
+
+.body-page {
+  position: relative;
+}
+
+.body-page--hidden-overflow {
+  overflow: hidden;
+}
+
+.shading {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #002B66;
+  opacity: 50%;
+  display: none;
+}
+
+.shading--active {
+  display: block;
 }
 
 .page-header {
@@ -1481,6 +1502,7 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-bottom: 163px;
 }
 
 .additional-info__map iframe {
@@ -1503,7 +1525,6 @@ html {
   -ms-flex-item-align: stretch;
   align-self: stretch;
   padding: 77px 0;
-  gap: 31px;
 }
 
 .additional-info__address p {
@@ -1513,6 +1534,7 @@ html {
   line-height: 27px;
   text-align: left;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .additional-info__address a {
@@ -1527,6 +1549,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
+  padding: 11px 0;
 }
 
 .additional-info__link br {
@@ -1536,7 +1559,12 @@ html {
 .main-footer {
   background-color: #011c40;
   padding: 13px 103px;
-  margin-top: 25px;
+  position: absolute;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
 }
 
 .main-footer__wrapper {
@@ -1578,35 +1606,35 @@ html {
   }
 } */
 
-@media (min-width: 1366px) {
+@media (min-width: 1024px) {
   .page-header::after {
-    background-image: url("../img/header-bg-desktop.png");
+    background-image: url("../img/header-bg-desktop.webp");
   }
 
   .advantages::after {
-    background-image: url("../img/main-bg-desktop.png");
+    background-image: url("../img/main-bg-desktop.webp");
   }
 
   .feedback::after {
-    background-image: url("../img/feedback-bg-desktop.png");
+    background-image: url("../img/feedback-bg-desktop.webp");
   }
 }
 
-@media (min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1366px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1366px) and (min-resolution: 2dppx) {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .page-header::after {
-    background-image: url("../img/header-bg-desktop@2x.png");
+    background-image: url("../img/header-bg-desktop@2x.webp");
   }
 
   .advantages::after {
-    background-image: url("../img/main-bg-desktop@2x.png");
+    background-image: url("../img/main-bg-desktop@2x.webp");
   }
 
   .feedback::after {
-    background-image: url("../img/feedback-bg-desktop@2x.png");
+    background-image: url("../img/feedback-bg-desktop@2x.webp");
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1023px) {
   .page-header {
     min-height: 638px;
   }
@@ -1797,7 +1825,7 @@ html {
   }
 
   .catalog__list li:hover .catalog__item-card {
-    padding: 28px 35px 0;
+    padding: 28px 30px 0;
   }
 
   .catalog__image-container img {
@@ -1877,6 +1905,7 @@ html {
     width: calc(100% - 90px);
     gap: 27px;
     margin-top: 100px;
+    padding-bottom: 219px;
   }
 
   .additional-info__map {
@@ -1897,7 +1926,10 @@ html {
     align-self: flex-start;
     padding: 0;
     margin-top: 66px;
-    gap: 26px;
+  }
+
+  .additional-info__address a {
+    padding: 10px 0;
   }
 
   .additional-info__link br {
@@ -1905,13 +1937,16 @@ html {
   }
 
   .additional-info__mark {
-    width: 28px;
+    width: 23px;
     height: 23px;
+  }
+
+  .additional-info__phone {
+    margin-right: 5px;
   }
 
   .main-footer {
     padding: 2px 45px;
-    margin-top: 100px;
   }
 
   .social-list {
@@ -1942,6 +1977,13 @@ html {
 
   .logo {
     margin: 0;
+  }
+
+  .logo--active {
+    width: 100%;
+    max-width: 285px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 
   .logo__img {
@@ -1993,9 +2035,7 @@ html {
     left: 0;
     margin-right: 0;
     min-height: 500px;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
+    height: 100vh;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2003,11 +2043,13 @@ html {
     box-sizing: border-box;
     background-color: #f9fbfd;
     position: absolute;
+    max-width: 285px;
   }
 
   .main-nav--hidden {
     padding: 20px 15px;
     width: 100%;
+    max-width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-orient: vertical;
@@ -2035,6 +2077,9 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     gap: 6px;
+    max-width: 285px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 
   .main-nav--footer {
@@ -2204,7 +2249,7 @@ html {
   }
 
   .catalog__list li:hover .catalog__item-card {
-    padding: 35px 25px 0;
+    padding: 30px 25px 0;
   }
 
   .catalog__image-container img {
@@ -2310,12 +2355,18 @@ html {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    gap: 32px;
+    gap: 23px;
     margin-top: 0;
+    padding-bottom: 350px;
   }
 
   .additional-info__map {
     width: 100%;
+    min-height: 315px;
+  }
+
+  .additional-info__map iframe {
+    min-height: 315px;
   }
 
   .additional-info__address {
@@ -2325,7 +2376,6 @@ html {
 
   .main-footer {
     padding: 40px 15px 36px;
-    margin-top: 46px;
   }
 
   .main-footer__wrapper {
@@ -2347,56 +2397,56 @@ html {
 
 @media (min-width: 0) and (max-width: 767px) {
   .page-header::after {
-    background-image: url("../img/header-bg-mobile.png");
+    background-image: url("../img/header-bg-mobile.webp");
   }
 
   .advantages::after {
-    background-image: url("../img/main-bg-mobile.png");
+    background-image: url("../img/main-bg-mobile.webp");
   }
 
   .feedback::after {
-    background-image: url("../img/feedback-bg-mobile.png");
+    background-image: url("../img/feedback-bg-mobile.webp");
   }
 }
 
 @media (min-width: 0) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 0) and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 0) and (max-width: 767px) and (min-resolution: 2dppx) {
   .page-header::after {
-    background-image: url("../img/header-bg-mobile@2x.png");
+    background-image: url("../img/header-bg-mobile@2x.webp");
   }
 
   .advantages::after {
-    background-image: url("../img/main-bg-mobile@2x.png");
+    background-image: url("../img/main-bg-mobile@2x.webp");
   }
 
   .feedback::after {
-    background-image: url("../img/feedback-bg-mobile@2x.png");
+    background-image: url("../img/feedback-bg-mobile@2x.webp");
   }
 }
 
-@media (min-width: 768px) and (max-width: 1365px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .page-header::after {
-    background-image: url("../img/header-bg-tablet.png");
+    background-image: url("../img/header-bg-tablet.webp");
   }
 
   .advantages::after {
-    background-image: url("../img/main-bg-tablet.png");
+    background-image: url("../img/main-bg-tablet.webp");
   }
 
   .feedback::after {
-    background-image: url("../img/feedback-bg-tablet.png");
+    background-image: url("../img/feedback-bg-tablet.webp");
   }
 }
 
-@media (min-width: 768px) and (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1365px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (max-width: 1365px) and (min-resolution: 2dppx) {
+@media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 2dppx) {
   .page-header::after {
-    background-image: url("../img/header-bg-tablet@2x.png");
+    background-image: url("../img/header-bg-tablet@2x.webp");
   }
 
   .advantages::after {
-    background-image: url("../img/main-bg-tablet@2x.png");
+    background-image: url("../img/main-bg-tablet@2x.webp");
   }
 
   .feedback::after {
-    background-image: url("../img/feedback-bg-tablet@2x.png");
+    background-image: url("../img/feedback-bg-tablet@2x.webp");
   }
 }

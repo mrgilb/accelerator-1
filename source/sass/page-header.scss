@@ -20,26 +20,26 @@
     background-color: $color-default-blue;
 
     @media (min-width: 0) and (max-width: $vp-768) {
-      background-image: url("../img/header-bg-mobile.png");
+      background-image: url("../img/header-bg-mobile.webp");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/header-bg-mobile@2x.png");
+        background-image: url("../img/header-bg-mobile@2x.webp");
       }
     }
 
     @media (min-width: 768px) and (max-width: $vp-1366) {
-      background-image: url("../img/header-bg-tablet.png");
+      background-image: url("../img/header-bg-tablet.webp");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/header-bg-tablet@2x.png");
+        background-image: url("../img/header-bg-tablet@2x.webp");
       }
     }
 
-    @media (min-width: 1366px) {
-      background-image: url("../img/header-bg-desktop.png");
+    @media (min-width: 1024px) {
+      background-image: url("../img/header-bg-desktop.webp");
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/header-bg-desktop@2x.png");
+        background-image: url("../img/header-bg-desktop@2x.webp");
       }
     }
 

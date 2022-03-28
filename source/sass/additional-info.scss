@@ -8,12 +8,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 163px;
 
   @media (max-width: $vp-1366) {
     padding: 0 45px;
     width: calc(100% - 90px);
     gap: 27px;
     margin-top: 100px;
+    padding-bottom: 219px;
   }
 
   @media (max-width: $vp-768) {
@@ -21,8 +23,9 @@
     width: calc(100% - 30px);
     flex-direction: column-reverse;
     align-items: stretch;
-    gap: 32px;
+    gap: 23px;
     margin-top: 0;
+    padding-bottom: 350px;
   }
 }
 
@@ -35,6 +38,7 @@
 
   @media (max-width: $vp-768) {
     width: 100%;
+    min-height: 315px;
   }
 }
 
@@ -47,6 +51,10 @@
     min-height: 335px;
     height: 100%;
   }
+
+  @media (max-width: $vp-768) {
+    min-height: 315px;
+  }
 }
 
 .additional-info__address {
@@ -56,14 +64,12 @@
   justify-content: flex-start;
   align-self: stretch;
   padding: 77px 0;
-  gap: 31px;
 
   @media (max-width: $vp-1366) {
     width: 48%;
     align-self: flex-start;
     padding: 0;
     margin-top: 66px;
-    gap: 26px;
   }
 
   @media (max-width: $vp-768) {
@@ -79,6 +85,11 @@
   line-height: 27px;
   text-align: left;
   margin: 0;
+  margin-bottom: 20px;
+
+  @media(max-width: $vp-1366) {
+
+  }
 }
 
 .additional-info__address a {
@@ -91,6 +102,11 @@
   color: $color-default-blue;
   display: flex;
   gap: 5px;
+  padding: 11px 0;
+
+  @media (max-width: $vp-1366) {
+    padding: 10px 0;
+  }
 }
 
 .additional-info__link br {
@@ -103,7 +119,13 @@
 
 .additional-info__mark {
   @media (max-width: $vp-1366) {
-    width: 28px;
+    width: 23px;
     height: 23px;
+  }
+}
+
+.additional-info__phone {
+  @media (max-width: $vp-1366) {
+    margin-right: 5px;
   }
 }

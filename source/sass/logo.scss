@@ -8,6 +8,15 @@
   }
 }
 
+.logo--active {
+
+  @media (max-width: $vp-768) {
+    width: 100%;
+    max-width: 285px;
+    align-self: flex-end;
+  }
+}
+
 .logo__img {
   fill: $color-default-white;
 

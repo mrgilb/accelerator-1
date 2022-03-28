@@ -31,11 +31,12 @@
     left: 0;
     margin-right: 0;
     min-height: 500px;
-    height: min-content;
+    height: 100vh;
     justify-content: flex-start;
     box-sizing: border-box;
     background-color: $color-default-white;
     position: absolute;
+    max-width: 285px;
   }
 }
 
@@ -43,6 +44,7 @@
   @media (max-width: $vp-768) {
     padding: 20px 15px;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
@@ -69,6 +71,8 @@
     padding: 33px 25px;
     box-sizing: border-box;
     gap: 6px;
+    max-width: 285px;
+    align-self: flex-end;
   }
 }
 
