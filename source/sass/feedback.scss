@@ -191,8 +191,6 @@
   justify-content: flex-start;
   position: relative;
 
-
-
   @media (max-width: $vp-768) {
     width: 100%;
     padding: 35px 30px;
@@ -417,7 +415,6 @@
 }
 
 .feedback__form input[type="checkbox"]:checked + label {
-
   &::after {
     background-image: url("../img/sprite/tick.svg");
     background-position: center;
