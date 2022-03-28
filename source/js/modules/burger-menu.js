@@ -32,10 +32,10 @@ if (document.querySelector('.main-nav--header')) {
 
                 const onClickOverlayClosePopup = (event) => {
                   const composedPath = event.composedPath().includes(mainNav);
-
                   if (!composedPath) {
-                    switchingMenu();
-                    document.removeEventListener('click', onClickOverlayClosePopup);
+                    if (!mainNav.classList.contains('main-nav--hidden')) {
+                      switchingMenu();
+                    }
                   }
                 };
 
