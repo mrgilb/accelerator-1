@@ -6,6 +6,9 @@ export const validationPhone = (evt) => {
   if (!regex.test(value)) {
     evt.target.setCustomValidity('Нужно ввести номер телефона в формате : +79999999999 или 9999999999 или 89999999999');
   }
+  if (regex.test(value)) {
+    evt.target.setCustomValidity('');
+  }
   evt.target.reportValidity();
 };
 

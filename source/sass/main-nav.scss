@@ -124,6 +124,7 @@
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 33px;
 
   @media (max-width: $vp-1366) {

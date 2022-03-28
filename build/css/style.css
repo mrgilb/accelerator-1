@@ -615,6 +615,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 33px;
 }
 
@@ -942,6 +944,7 @@ html {
   gap: 12px;
   padding: 28px 25px;
   padding-bottom: 10px;
+  overflow-y: scroll;
 }
 
 .catalog__list li:focus-within .catalog__item-card {
@@ -1023,7 +1026,7 @@ html {
   grid-column: 1/-1;
   padding: 0 25px;
   padding-bottom: 24px;
-  height: 100%;
+  height: 386px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: transparent;
@@ -1037,6 +1040,7 @@ html {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  overflow-y: scroll;
 }
 
 .catalog__item-card h3 {
@@ -1139,7 +1143,6 @@ html {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 55px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1149,6 +1152,7 @@ html {
 .feedback__desc {
   -ms-grid-column-align: end;
   justify-self: end;
+  margin-right: 30px;
 }
 
 .feedback__desc h2 {
@@ -1260,7 +1264,7 @@ html {
   box-sizing: border-box;
   padding: 11px 16px;
   width: 303px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   outline: none;
 }
 
@@ -1297,8 +1301,13 @@ html {
   text-align: left;
   color: #f9fbfd;
   margin: 0;
+  padding: 5px 0;
   padding-left: 23px;
   position: relative;
+}
+
+.feedback__form div label:hover {
+  cursor: pointer;
 }
 
 .feedback__form div label::after {
@@ -1308,7 +1317,7 @@ html {
   background-color: #f9fbfd;
   position: absolute;
   left: 0;
-  top: -2px;
+  top: 1px;
 }
 
 .feedback__form--js div label {
@@ -1330,7 +1339,7 @@ html {
   background-color: #f9fbfd;
   position: absolute;
   left: 0;
-  top: -2px;
+  top: 1px;
 }
 
 .feedback__form div label br {
@@ -1369,6 +1378,11 @@ html {
   overflow: hidden;
 }
 
+.feedback__form input[type="checkbox"]:focus + label {
+  outline: #87ceeb 2px solid;
+  border-radius: 3px;
+}
+
 .feedback__form input[type="checkbox"]:checked + label::after {
   background-image: url("../img/sprite/tick.svg");
   background-position: center;
@@ -1392,6 +1406,7 @@ html {
   line-height: 21px;
   text-align: center;
   background-color: #f9fbfd;
+  cursor: pointer;
 }
 
 .feedback__form button:hover {
@@ -1505,13 +1520,19 @@ html {
   padding-bottom: 163px;
 }
 
+.additional-info__map {
+  width: 48%;
+}
+
 .additional-info__map iframe {
   border: none;
   display: block;
+  width: 100%;
 }
 
 .additional-info__address {
   max-width: 500px;
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1583,6 +1604,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 33px;
   margin: 0;
   padding: 0;
@@ -1860,6 +1883,7 @@ html {
     grid-row: 1/2;
     -ms-grid-column-align: center;
     justify-self: center;
+    margin-right: 0;
   }
 
   .feedback__desc h2 {
@@ -2299,8 +2323,12 @@ html {
     display: inline;
   }
 
+  .feedback__form {
+    width: 100%;
+  }
+
   .feedback__form form {
-    width: 290px;
+    width: 100%;
     padding: 35px 30px;
   }
 
@@ -2320,7 +2348,7 @@ html {
   }
 
   .feedback__form input {
-    width: 230px;
+    width: 100%;
     margin-bottom: 19px;
   }
 
@@ -2337,12 +2365,14 @@ html {
     margin-bottom: 27px;
   }
 
-  .feedback__form div label br {
-    display: inline;
+  .feedback__form div label {
+    padding: 0;
+    padding-left: 27px;
+    margin-top: -2px;
   }
 
-  .feedback__form--js div label br {
-    display: inline;
+  .feedback__form input[type="checkbox"]:focus + label {
+    outline: none;
   }
 
   .additional-info {
@@ -2448,5 +2478,15 @@ html {
 
   .feedback::after {
     background-image: url("../img/feedback-bg-tablet@2x.webp");
+  }
+}
+
+@media (width: 320px) {
+  .feedback__form div label br {
+    display: inline;
+  }
+
+  .feedback__form--js div label br {
+    display: inline;
   }
 }
