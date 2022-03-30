@@ -101,9 +101,17 @@
   gap: 5px;
   padding: 11px 0;
 
+  &:hover {
+    color: hsl(197, 71%, 73%);
+  }
+
   @media (max-width: $vp-1366) {
     padding: 10px 0;
   }
+}
+
+.additional-info__address a:hover svg {
+  fill: hsl(197, 71%, 73%);
 }
 
 .additional-info__link br {
@@ -115,6 +123,12 @@
 }
 
 .additional-info__mark {
+  fill: #011c40;
+
+  &:hover {
+    fill: hsl(197, 71%, 73%);
+  }
+
   @media (max-width: $vp-1366) {
     width: 23px;
     height: 23px;
@@ -122,6 +136,13 @@
 }
 
 .additional-info__phone {
+  fill: #011c40;
+
+  &:hover {
+    fill: hsl(197, 71%, 73%);
+  }
+
+
   @media (max-width: $vp-1366) {
     margin-right: 5px;
   }

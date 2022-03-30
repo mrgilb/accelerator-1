@@ -1612,8 +1612,32 @@ html {
   padding: 11px 0;
 }
 
+.additional-info__address a:hover {
+  color: #89cfeb;
+}
+
+.additional-info__address a:hover svg {
+  fill: #89cfeb;
+}
+
 .additional-info__link br {
   display: none;
+}
+
+.additional-info__mark {
+  fill: #011c40;
+}
+
+.additional-info__mark:hover {
+  fill: #89cfeb;
+}
+
+.additional-info__phone {
+  fill: #011c40;
+}
+
+.additional-info__phone:hover {
+  fill: #89cfeb;
 }
 
 .main-footer {
