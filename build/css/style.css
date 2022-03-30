@@ -2056,6 +2056,7 @@ html {
 
   .social-list {
     margin-bottom: -23px;
+    min-width: 87px;
   }
 
   .social-list li {
