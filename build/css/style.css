@@ -1582,8 +1582,8 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   padding: 77px 0;
 }
 
@@ -1610,6 +1610,9 @@ html {
   display: flex;
   gap: 5px;
   padding: 11px 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .additional-info__address a:hover {
