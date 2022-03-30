@@ -628,14 +628,15 @@ html {
   width: auto;
   padding: 35px 0;
   margin: 0;
+  margin-right: 30px;
   gap: 40px;
 }
 
 .main-nav--footer .main-nav__list {
   gap: 23px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .main-nav--footer .main-nav__link--footer {
@@ -1676,6 +1677,7 @@ html {
   -ms-flex-item-align: center;
   align-self: center;
   margin-bottom: -33px;
+  min-width: 117px;
 }
 
 .social-list li {

@@ -81,6 +81,7 @@
   width: auto;
   padding: 35px 0;
   margin: 0;
+  margin-right: 30px;
   gap: 40px;
 
   @media (max-width: $vp-1366) {
@@ -97,7 +98,7 @@
 
 .main-nav--footer .main-nav__list {
   gap: 23px;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   @media (min-width: 1366px) {
     gap: 33px;
