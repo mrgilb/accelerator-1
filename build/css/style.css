@@ -633,7 +633,7 @@ html {
 }
 
 .main-nav--footer .main-nav__list {
-  gap: 23px;
+  gap: 22px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
