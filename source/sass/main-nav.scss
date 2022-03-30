@@ -73,7 +73,11 @@
     box-sizing: border-box;
     gap: 6px;
     max-width: 285px;
-    align-self: flex-end;
+    align-self: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
   }
 }
 
@@ -144,6 +148,12 @@
     flex-direction: column;
     width: calc(100% - 35px);
     height: 100%;
+  }
+}
+
+.main-nav__list li {
+  @media (max-width: $vp-768) {
+    height: min-content;
   }
 }
 
