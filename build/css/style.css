@@ -468,6 +468,7 @@ html {
   background-color: #002b66;
   opacity: 50%;
   display: none;
+  z-index: 3;
 }
 
 .shading--active {
@@ -620,6 +621,7 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  z-index: 4;
 }
 
 .main-nav--footer {
