@@ -95,6 +95,13 @@
 }
 
 .main-nav--footer .main-nav__list {
+  gap: 23px;
+  justify-content: space-between;
+
+  @media (min-width: 1366px) {
+    gap: 33px
+  }
+
   @media (max-width: $vp-768) {
     position: static;
     background-color: $color-default-blue;

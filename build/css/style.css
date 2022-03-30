@@ -629,6 +629,13 @@ html {
   gap: 40px;
 }
 
+.main-nav--footer .main-nav__list {
+  gap: 23px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .main-nav--footer .main-nav__link--footer {
   color: #f9fbfd;
 }
@@ -1691,6 +1698,12 @@ html {
 
   .feedback::after {
     background-image: url("../img/feedback-bg-desktop@2x.webp");
+  }
+}
+
+@media (min-width: 1366px) {
+  .main-nav--footer .main-nav__list {
+    gap: 33px;
   }
 }
 
