@@ -83,21 +83,23 @@
 }
 
 .advantages__list {
-  margin: 0 auto;
   padding: 0 103px;
+  width: 100%;
+  max-width: 1366px;
+  margin-top: 0;
+  box-sizing: border-box;
+  justify-self: center;
   margin-bottom: 120px;
-  max-width: calc(1366px - 206px);
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-between;
   grid-row: 2/3;
   grid-column: 1/-1;
 
   @media (max-width: $vp-1366) {
-    padding: 0 45px;
-    width: calc(100% - 90px);
+    padding: 0;
+    width: 100%;
     gap: 30px;
     justify-content: center;
     margin-bottom: 97px;
@@ -112,7 +114,8 @@
 }
 
 .advantages__list li {
-  width: 360px;
+  width: 31%;
+  max-width: 360px;
   min-height: 246px;
   box-sizing: border-box;
   padding: 30px;

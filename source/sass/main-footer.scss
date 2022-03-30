@@ -1,18 +1,18 @@
 .main-footer {
   background-color: $color-default-blue;
   padding: 13px 103px;
-  position: absolute;
   width: 100%;
   box-sizing: border-box;
-  bottom: 0;
-  left: 0;
+  margin-top: 25px;
 
   @media (max-width: $vp-1366) {
     padding: 2px 45px;
+    margin-top: 100px;
   }
 
   @media (max-width: $vp-768) {
     padding: 40px 15px 36px;
+    margin-top: 67px;
   }
 }
 

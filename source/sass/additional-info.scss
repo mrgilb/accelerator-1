@@ -8,14 +8,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 163px;
 
   @media (max-width: $vp-1366) {
     padding: 0 45px;
     width: calc(100% - 90px);
     gap: 27px;
     margin-top: 100px;
-    padding-bottom: 219px;
   }
 
   @media (max-width: $vp-768) {
@@ -25,7 +23,6 @@
     align-items: stretch;
     gap: 23px;
     margin-top: 0;
-    padding-bottom: 350px;
   }
 }
 

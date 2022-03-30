@@ -1,18 +1,27 @@
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 33px;
   margin: 0;
   padding: 0;
   list-style: none;
   align-self: center;
 
-  @media (max-width: $vp-1366) {
-    gap: 23px;
-  }
+
 
   @media (max-width: $vp-768) {
     align-self: flex-start;
+  }
+}
+
+.social-list li {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $vp-1366) {
+    margin-right: 23px;
   }
 }
 
