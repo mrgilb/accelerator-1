@@ -167,6 +167,14 @@
   justify-self: end;
   margin-right: 60px;
 
+  @media (min-width: 1024px) {
+    margin-right: 0;
+  }
+
+  @media (min-width: 1160px) {
+    margin-right: 60px;
+  }
+
   @media (max-width: $vp-1366) {
     grid-row: 2/3;
     justify-self: center;
@@ -176,10 +184,6 @@
 
   @media (max-width: $vp-768) {
     width: 100%;
-  }
-
-  @media (min-width: 1024px) and (max-width: $vp-1366) {
-    margin-right: 0;
   }
 }
 
