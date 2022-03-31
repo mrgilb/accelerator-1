@@ -177,6 +177,10 @@
   @media (max-width: $vp-768) {
     width: 100%;
   }
+
+  @media (min-width: 1024px) and (max-width: $vp-1366) {
+    margin-right: 0;
+  }
 }
 
 .feedback__form form {
