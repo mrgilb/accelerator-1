@@ -85,14 +85,18 @@
 }
 
 .about__image-container {
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1366px) {
+    width: 560px;
+  }
+
   width: 560px;
   height: 301px;
   overflow: hidden;
   grid-column: 2/3;
-
-  @media (min-width: 1024px)  {
-    width: 100%;
-  }
 
   @media (max-width: $vp-1366) {
     width: 324px;

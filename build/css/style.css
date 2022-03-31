@@ -1754,6 +1754,10 @@ html {
   .main-nav--footer .main-nav__list {
     gap: 33px;
   }
+
+  .about__image-container {
+    width: 560px;
+  }
 }
 
 @media (max-width: 1023px) {
