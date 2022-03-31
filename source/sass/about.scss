@@ -90,6 +90,10 @@
   overflow: hidden;
   grid-column: 2/3;
 
+  @media (min-width: 1024px)  {
+    width: 100%;
+  }
+
   @media (max-width: $vp-1366) {
     width: 324px;
     height: 264px;

@@ -1713,6 +1713,10 @@ html {
     gap: 16px;
   }
 
+  .about__image-container {
+    width: 100%;
+  }
+
   .advantages::after {
     background-image: url("../img/main-bg-desktop.webp");
   }
